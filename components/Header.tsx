@@ -139,53 +139,53 @@ export default function Header() {
 												</Link>
 											</li>
 											<li>
-												<Link href="/services/garage-door-installation">
-													Garage Door Installation
-												</Link>
-											</li>
-											<li>
-												<Link href="/services/garage-door-service">
-													Garage Door Service
-												</Link>
-											</li>
-											<li>
 												<Link href="/services/emergency-repair">
-													Emergency Garage Door Repair
+													24/7 Emergency Repair
 												</Link>
 											</li>
 											<li>
 												<Link href="/services/spring-repair">
-													Garage Door Spring Repair
+													Spring Replacement
 												</Link>
 											</li>
 											<li>
 												<Link href="/services/cable-repair">
-													Garage Door Cable Repair
+													Cable Repair
 												</Link>
 											</li>
 											<li>
 												<Link href="/services/opener-repair">
-													Garage Door Opener Repair
+													Opener Repair
 												</Link>
 											</li>
 											<li>
-												<Link href="/services/garage-door-replacement">
-													Garage Door Replacement
+												<Link href="/services/garage-door-installation">
+													Door Installation
 												</Link>
 											</li>
 											<li>
 												<Link href="/services/opener-installation">
-													Garage Door Opener Installation
+													Opener Installation
 												</Link>
 											</li>
 											<li>
 												<Link href="/services/residential-installation">
-													Residential Door Installation
+													Residential Doors
+												</Link>
+											</li>
+											<li>
+												<Link href="/services/garage-door-replacement">
+													Door Replacement
+												</Link>
+											</li>
+											<li>
+												<Link href="/services/garage-door-service">
+													General Tune-Up
 												</Link>
 											</li>
 											<li>
 												<Link href="/services/garage-door-maintenance">
-													Garage Door Maintenance
+													Annual Maintenance
 												</Link>
 											</li>
 										</ul>
