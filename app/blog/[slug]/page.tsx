@@ -98,7 +98,7 @@ export default async function BlogPostPage({ params }: Props) {
 			name: "Charlotte Garage Door Repair",
 			logo: {
 				"@type": "ImageObject",
-				url: "https://charlottegaragedoorrepairs.com/logo.png",
+				url: "https://charlotte-garagedoorrepair.com/logo.jpeg",
 			},
 		},
 		mainEntityOfPage: {

@@ -52,7 +52,7 @@ export const metadata: Metadata = {
 			"Fast, professional garage door repair, spring repair, opener installation, and emergency service in Charlotte, NC and surrounding metro areas.",
 		images: [
 			{
-				url: "/logo.png",
+				url: "/logo.jpeg",
 				width: 480,
 				height: 320,
 				alt: "Charlotte Garage Door Repair",
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
 			"Charlotte Garage Door Repair | 24/7 Emergency Garage Door Service",
 		description:
 			"Fast, reliable garage door repair, spring repair, opener installation, and emergency service in Charlotte and surrounding metro areas.",
-		images: ["/logo.png"],
+		images: ["/logo.jpeg"],
 	},
 	robots: {
 		index: true,
@@ -79,9 +79,9 @@ export const metadata: Metadata = {
 		},
 	},
 	icons: {
-		icon: "/logo.png",
-		shortcut: "/logo.png",
-		apple: "/logo.png",
+		icon: "/logo.jpeg",
+		shortcut: "/logo.jpeg",
+		apple: "/logo.jpeg",
 	},
 	verification: {
 		google: "google-site-verification-code-here",
@@ -97,7 +97,7 @@ export default function RootLayout({
 		"@context": "https://schema.org",
 		"@type": "HomeAndConstructionBusiness",
 		name: "Charlotte Garage Door Repair",
-		image: "https://charlotte-garagedoorrepair.com/logo.png",
+		image: "https://charlotte-garagedoorrepair.com/logo.jpeg",
 		"@id": "https://charlotte-garagedoorrepair.com",
 		url: "https://charlotte-garagedoorrepair.com",
 		telephone: "+18284502416",
@@ -157,9 +157,9 @@ export default function RootLayout({
 	return (
 		<html lang="en" suppressHydrationWarning>
 			<head>
-				<link rel="icon" href="/logo.png" type="image/png" />
-				<link rel="shortcut icon" href="/logo.png" type="image/png" />
-				<link rel="apple-touch-icon" href="/logo.png" />
+				<link rel="icon" href="/logo.jpeg" type="image/jpeg" />
+				<link rel="shortcut icon" href="/logo.jpeg" type="image/jpeg" />
+				<link rel="apple-touch-icon" href="/logo.jpeg" />
 				{/*
           CRITICAL: Load all CSS synchronously before page renders to prevent FOUC.
           This blocking script runs before any content is painted.

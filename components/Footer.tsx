@@ -11,7 +11,7 @@ export default function Footer() {
 				<div className="row g-4">
 					<div className="col-lg-4">
 						<Image
-							src="/logo.png"
+							src="/logo.jpeg"
 							className="w-150px mb-4"
 							alt="Charlotte Garage Door Repair"
 							width={150}

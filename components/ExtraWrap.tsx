@@ -15,7 +15,7 @@ export default function ExtraWrap() {
 
 				<div id="extra-content">
 					<Image
-						src="/logo.png"
+						src="/logo.jpeg"
 						className="w-150px"
 						alt="Charlotte Garage Door Repair Logo"
 						width={150}

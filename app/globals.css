@@ -118,33 +118,128 @@ h2,
 	color: #fff;
 }
 
-/* Show Make Appointment button on mobile, to the left of burger icon */
+/* Disable template fx-slide :before overlay text that causes overlapping */
+a.btn-main.fx-slide:before,
+a.btn-main.fx-slide:hover:before,
+.btn-main:before,
+.btn-main:hover:before {
+	content: none !important;
+	display: none !important;
+}
+
+a.btn-main.fx-slide span,
+a.btn-main.fx-slide:hover span {
+	transform: none !important;
+	opacity: 1 !important;
+}
+
+a.btn-main.fx-slide:hover {
+	transform: translateY(-3px) scale(1.02) !important;
+}
+
+/* Custom Header Navbar Buttons Alignment & Clean Styling */
+.header-btn-call,
+.header-btn-quote {
+	display: inline-flex !important;
+	align-items: center !important;
+	justify-content: center !important;
+	height: 40px !important;
+	padding: 0 16px !important;
+	font-size: 13px !important;
+	font-weight: 700 !important;
+	line-height: 1 !important;
+	border-radius: 6px !important;
+	text-transform: uppercase !important;
+	letter-spacing: 0.5px !important;
+	transition: all 0.25s ease !important;
+	white-space: nowrap !important;
+	text-decoration: none !important;
+	box-sizing: border-box !important;
+}
+
+.header-btn-call {
+	background: transparent !important;
+	color: #ffffff !important;
+	border: 1px solid rgba(255, 255, 255, 0.4) !important;
+}
+
+.header-btn-call:hover {
+	background: rgba(255, 255, 255, 0.15) !important;
+	border-color: #ffffff !important;
+	color: #ffffff !important;
+	transform: translateY(-1px) !important;
+}
+
+.header-btn-quote {
+	background: var(--candy-red) !important;
+	color: #ffffff !important;
+	border: 1px solid var(--candy-red) !important;
+}
+
+.header-btn-quote:hover {
+	background: #c8131a !important;
+	border-color: #c8131a !important;
+	color: #ffffff !important;
+	transform: translateY(-1px) !important;
+	box-shadow: 0 4px 14px rgba(227, 27, 35, 0.4) !important;
+}
+
+/* Navbar container alignment */
+.menu_side_area {
+	display: flex !important;
+	align-items: center !important;
+	justify-content: flex-end !important;
+	gap: 10px !important;
+}
+
+header .de-flex {
+	align-items: center !important;
+}
+
 @media only screen and (max-width: 992px) {
-	header .de-flex .de-flex-col .menu_side_area {
-		display: flex !important;
-		flex-direction: row !important;
-		align-items: center !important;
-		justify-content: flex-end !important;
+	.header-btn-call,
+	.header-btn-quote {
+		height: 34px !important;
+		padding: 0 12px !important;
+		font-size: 11px !important;
+		border-radius: 4px !important;
 	}
 
-	header .de-flex .de-flex-col .menu_side_area a.btn-main.fx-slide.hover-white {
-		display: inline-flex !important;
-		padding: 8px 15px !important;
-		font-size: 12px !important;
-		margin-right: 15px !important;
-		order: 1 !important;
+	.menu_side_area {
+		gap: 6px !important;
 	}
 
 	header .de-flex .de-flex-col .menu_side_area #menu-btn {
 		float: none !important;
-		order: 2 !important;
-		margin-left: 0 !important;
+		margin-left: 4px !important;
 	}
 }
 
-@media only screen and (max-width: 767px) {
-	header .de-flex .de-flex-col .menu_side_area a.btn-main.fx-slide.hover-white {
-		display: inline-flex !important;
+@media only screen and (max-width: 576px) {
+	.header-btn-call,
+	.header-btn-quote {
+		height: 32px !important;
+		padding: 0 8px !important;
+		font-size: 10px !important;
+		letter-spacing: 0 !important;
+	}
+
+	.btn-text-full {
+		display: none !important;
+	}
+
+	.btn-text-short {
+		display: inline !important;
+	}
+}
+
+@media only screen and (min-width: 577px) {
+	.btn-text-short {
+		display: none !important;
+	}
+
+	.btn-text-full {
+		display: inline !important;
 	}
 }
 
@@ -325,4 +420,275 @@ header.scroll-down #mainmenu > li > a {
 		padding-left: 14px !important;
 	}
 }
+
+/* Ensure global horizontal overflow prevention */
+html,
+body,
+#wrapper {
+	overflow-x: hidden !important;
+	width: 100% !important;
+}
+
+/* Hero & Swiper Slider Responsiveness */
+.swiper-inner {
+	background-size: cover !important;
+	background-position: center center !important;
+}
+
+@media (max-width: 768px) {
+	.mh-700 {
+		min-height: 540px !important;
+	}
+
+	.swiper-button-next,
+	.swiper-button-prev {
+		width: 38px !important;
+		height: 38px !important;
+		background: rgba(0, 0, 0, 0.6) !important;
+		border-radius: 50% !important;
+	}
+
+	.swiper-button-next:after,
+	.swiper-button-prev:after {
+		font-size: 16px !important;
+	}
+
+	.swiper-button-prev {
+		left: 10px !important;
+	}
+
+	.swiper-button-next {
+		right: 10px !important;
+	}
+
+	.fs-72 {
+		font-size: 2.25rem !important;
+		line-height: 1.15 !important;
+	}
+
+	.fs-32 {
+		font-size: 1.5rem !important;
+	}
+
+	.fs-28 {
+		font-size: 1.35rem !important;
+	}
+}
+
+@media (max-width: 480px) {
+	.mh-700 {
+		min-height: 480px !important;
+	}
+
+	.fs-72 {
+		font-size: 1.85rem !important;
+	}
+
+	/* Responsive padding for topbar / header on tiny screens */
+	#topbar {
+		font-size: 12px !important;
+	}
+}
+
+/* Mobile Navigation Drawer Full Responsiveness & All Options Visibility */
+@media (max-width: 991px) {
+	header #mainmenu {
+		display: none;
+	}
+
+	header.menu-open #mainmenu {
+		display: block !important;
+		position: fixed !important;
+		top: 60px !important;
+		left: 0 !important;
+		right: 0 !important;
+		bottom: 0 !important;
+		width: 100vw !important;
+		height: calc(100vh - 60px) !important;
+		background: rgba(10, 10, 10, 0.98) !important;
+		backdrop-filter: blur(24px) !important;
+		-webkit-backdrop-filter: blur(24px) !important;
+		padding: 20px 20px 140px 20px !important;
+		overflow-y: auto !important;
+		-webkit-overflow-scrolling: touch !important;
+		z-index: 99999 !important;
+		box-shadow: 0 12px 40px rgba(0, 0, 0, 0.95) !important;
+		border-top: 1px solid rgba(255, 255, 255, 0.12) !important;
+	}
+
+	header.menu-open #mainmenu > li {
+		display: block !important;
+		width: 100% !important;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+		padding: 6px 0 !important;
+		margin: 0 !important;
+	}
+
+	header.menu-open #mainmenu > li > a.menu-item {
+		font-size: 16px !important;
+		font-weight: 700 !important;
+		color: #ffffff !important;
+		padding: 10px 12px !important;
+		display: block !important;
+		text-transform: uppercase !important;
+		letter-spacing: 0.5px !important;
+		border-radius: 6px !important;
+		transition: background 0.2s ease, color 0.2s ease !important;
+	}
+
+	header.menu-open #mainmenu > li > a.menu-item:hover,
+	header.menu-open #mainmenu > li > a.menu-item:active {
+		background: rgba(227, 27, 35, 0.15) !important;
+		color: var(--candy-red) !important;
+	}
+
+	header.menu-open #mainmenu li ul.innermenue {
+		display: block !important;
+		position: static !important;
+		width: 100% !important;
+		background: rgba(255, 255, 255, 0.05) !important;
+		padding: 8px 10px !important;
+		border-radius: 8px !important;
+		margin: 6px 0 10px 0 !important;
+		border: 1px solid rgba(255, 255, 255, 0.08) !important;
+	}
+
+	header.menu-open #mainmenu li ul.innermenue li {
+		display: block !important;
+		width: 100% !important;
+		border: none !important;
+		margin: 2px 0 !important;
+	}
+
+	header.menu-open #mainmenu li ul.innermenue li a {
+		display: block !important;
+		font-size: 13.5px !important;
+		font-weight: 500 !important;
+		color: rgba(255, 255, 255, 0.85) !important;
+		padding: 8px 12px !important;
+		border-radius: 6px !important;
+		transition: background 0.2s ease, color 0.2s ease !important;
+		white-space: normal !important;
+		word-break: break-word !important;
+	}
+
+	header.menu-open #mainmenu li ul.innermenue li a:hover,
+	header.menu-open #mainmenu li ul.innermenue li a:active {
+		background: rgba(227, 27, 35, 0.22) !important;
+		color: #ffffff !important;
+	}
+}
+
+/* TwentyTwenty Before & After Container Responsiveness */
+.twentytwenty-container {
+	max-width: 100% !important;
+	height: auto !important;
+}
+
+.twentytwenty-container img {
+	max-width: 100% !important;
+	height: auto !important;
+}
+
+/* Premium Micro-Animations for All Buttons */
+.btn-main,
+.header-btn-call,
+.header-btn-quote,
+.btn-line,
+.filter-btn,
+button.btn-main,
+a.btn-main {
+	position: relative !important;
+	overflow: hidden !important;
+	transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1),
+	            box-shadow 0.3s cubic-bezier(0.25, 1, 0.5, 1),
+	            background-color 0.3s cubic-bezier(0.25, 1, 0.5, 1),
+	            border-color 0.3s cubic-bezier(0.25, 1, 0.5, 1),
+	            color 0.3s cubic-bezier(0.25, 1, 0.5, 1) !important;
+}
+
+/* Diagonal Light Sweep Shimmer Effect on Hover */
+.btn-main::after,
+.header-btn-call::after,
+.header-btn-quote::after,
+.btn-line::after,
+.filter-btn::after,
+button.btn-main::after,
+a.btn-main::after {
+	content: "" !important;
+	position: absolute !important;
+	top: -60% !important;
+	left: -70% !important;
+	width: 60% !important;
+	height: 220% !important;
+	background: linear-gradient(
+		90deg,
+		rgba(255, 255, 255, 0) 0%,
+		rgba(255, 255, 255, 0.4) 50%,
+		rgba(255, 255, 255, 0) 100%
+	) !important;
+	transform: rotate(25deg) translateX(-100%) !important;
+	transition: transform 0.65s cubic-bezier(0.19, 1, 0.22, 1) !important;
+	pointer-events: none !important;
+	z-index: 5 !important;
+}
+
+.btn-main:hover::after,
+.header-btn-call:hover::after,
+.header-btn-quote:hover::after,
+.btn-line:hover::after,
+.filter-btn:hover::after,
+button.btn-main:hover::after,
+a.btn-main:hover::after {
+	transform: rotate(25deg) translateX(450%) !important;
+}
+
+/* Button Elevation and Glow on Hover */
+.btn-main:hover,
+.header-btn-quote:hover,
+a.btn-main:hover,
+button.btn-main:hover {
+	transform: translateY(-3px) scale(1.02) !important;
+	box-shadow: 0 10px 25px rgba(227, 27, 35, 0.45), 0 0 12px rgba(227, 27, 35, 0.25) !important;
+}
+
+.header-btn-call:hover,
+.btn-line:hover {
+	transform: translateY(-3px) scale(1.02) !important;
+	box-shadow: 0 10px 22px rgba(255, 255, 255, 0.22) !important;
+}
+
+/* Icon Animation on Hover */
+.btn-main:hover i,
+.header-btn-call:hover i,
+.header-btn-quote:hover i,
+.btn-line:hover i,
+a.btn-main:hover i {
+	display: inline-block !important;
+	transform: scale(1.18) rotate(-10deg) translateX(-1px) !important;
+	transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
+}
+
+.btn-main i,
+.header-btn-call i,
+.header-btn-quote i,
+.btn-line i,
+a.btn-main i {
+	transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1) !important;
+}
+
+/* Click/Touch Feedback on Active */
+.btn-main:active,
+.header-btn-call:active,
+.header-btn-quote:active,
+.btn-line:active,
+.filter-btn:active,
+button.btn-main:active,
+a.btn-main:active {
+	transform: translateY(0px) scale(0.97) !important;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important;
+	transition: transform 0.1s ease, box-shadow 0.1s ease !important;
+}
+
+
 

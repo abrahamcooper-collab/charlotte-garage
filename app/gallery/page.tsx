@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 		type: "website",
 		images: [
 			{
-				url: "/logo.png",
+				url: "/logo.jpeg",
 				width: 800,
 				height: 800,
 				alt: "Charlotte Garage Door Repair Gallery",

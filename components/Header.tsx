@@ -3,45 +3,41 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState, useEffect } from "react";
+import { siteConfig } from "@/data/siteConfig";
 
 export default function Header() {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 
 	useEffect(() => {
-		// Handle menu click functionality
 		const handleMenuClick = () => {
 			const header = document.querySelector("header");
 			const menuBtn = document.querySelector("#menu-btn");
 
-			if (!isMenuOpen) {
-				header?.classList.add("menu-open");
-				if (typeof window !== "undefined") {
-					header?.style.setProperty("height", `${window.innerHeight}px`);
-				}
-				menuBtn?.classList.add("menu-open");
-				setIsMenuOpen(true);
-			} else {
-				header?.classList.remove("menu-open");
-				header?.style.setProperty("height", "auto");
+			if (header?.classList.contains("menu-open")) {
+				header.classList.remove("menu-open");
 				menuBtn?.classList.remove("menu-open");
+				document.body.style.overflow = "";
 				setIsMenuOpen(false);
+			} else {
+				header?.classList.add("menu-open");
+				menuBtn?.classList.add("menu-open");
+				document.body.style.overflow = "hidden";
+				setIsMenuOpen(true);
 			}
 		};
 
 		const menuBtn = document.querySelector("#menu-btn");
 		menuBtn?.addEventListener("click", handleMenuClick);
 
-		// Close menu when clicking on menu links
+		// Close menu when clicking on any menu link inside mainmenu
 		const handleLinkClick = () => {
 			const header = document.querySelector("header");
 			const menuBtn = document.querySelector("#menu-btn");
 
-			if (isMenuOpen) {
-				header?.classList.remove("menu-open");
-				header?.style.setProperty("height", "auto");
-				menuBtn?.classList.remove("menu-open");
-				setIsMenuOpen(false);
-			}
+			header?.classList.remove("menu-open");
+			menuBtn?.classList.remove("menu-open");
+			document.body.style.overflow = "";
+			setIsMenuOpen(false);
 		};
 
 		const menuLinks = document.querySelectorAll("#mainmenu a");
@@ -54,8 +50,9 @@ export default function Header() {
 			menuLinks.forEach((link) => {
 				link.removeEventListener("click", handleLinkClick);
 			});
+			document.body.style.overflow = "";
 		};
-	}, [isMenuOpen]);
+	}, []);
 
 	return (
 		<header
@@ -97,7 +94,7 @@ export default function Header() {
 									<Link href="/">
 										<Image
 											className="logo-main"
-											src="/logo.png"
+											src="/logo.jpeg"
 											alt="Charlotte Garage Door Repair"
 											width={85}
 											height={90}
@@ -106,7 +103,7 @@ export default function Header() {
 										/>
 										<Image
 											className="logo-mobile"
-											src="/logo.png"
+											src="/logo.jpeg"
 											alt="Charlotte Garage Door Repair"
 											width={60}
 											height={65}
@@ -271,11 +268,20 @@ export default function Header() {
 							</div>
 							<div className="de-flex-col">
 								<div className="menu_side_area">
+									<a
+										href={siteConfig.phoneHref}
+										className="header-btn-call"
+									>
+										<i className="icofont-phone me-1"></i>
+										<span className="btn-text-full">Call {siteConfig.phoneDisplay}</span>
+										<span className="btn-text-short">Call</span>
+									</a>
 									<Link
 										href="/contact"
-										className="btn-main fx-slide hover-white"
+										className="header-btn-quote"
 									>
-										<span>Get a Free Quote</span>
+										<span className="btn-text-full">Get a Free Quote</span>
+										<span className="btn-text-short">Free Quote</span>
 									</Link>
 									<span id="menu-btn"></span>
 								</div>

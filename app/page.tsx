@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 		type: "website",
 		images: [
 			{
-				url: "/logo.png",
+				url: "/logo.jpeg",
 				width: 480,
 				height: 320,
 				alt: "Charlotte Garage Door Repair",
@@ -61,11 +61,20 @@ export default function Home() {
 									</div>
 								</div>
 
-								<div className="col-lg-3">
+								<div className="col-lg-4 col-xl-3">
 									<div className="spacer-double"></div>
-									<p className="mb-0 wow fadeInUp" data-wow-delay=".2s">
+									<p className="mb-3 wow fadeInUp" data-wow-delay=".2s">
 										At <a href={siteConfig.gmbUrl} target="_blank" rel="noopener noreferrer" className="text-light-link">{siteConfig.name}</a>, we provide fast, professional 24/7 garage door repair, torsion spring replacement, cable repair, smart opener installation, and complete door replacements across Charlotte and surrounding communities.
 									</p>
+									<div className="wow fadeInUp" data-wow-delay=".3s">
+										<a
+											href={siteConfig.phoneHref}
+											className="btn-main btn-line d-inline-flex align-items-center"
+										>
+											<i className="icofont-phone me-2"></i>
+											<span>Call Us: {siteConfig.phoneDisplay}</span>
+										</a>
+									</div>
 								</div>
 							</div>
 						</div>
