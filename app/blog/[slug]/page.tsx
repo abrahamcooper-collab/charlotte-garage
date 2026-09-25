@@ -98,7 +98,7 @@ export default async function BlogPostPage({ params }: Props) {
 			name: "Charlotte Garage Door Repair",
 			logo: {
 				"@type": "ImageObject",
-				url: "https://charlotte-garagedoorrepair.com/logo.jpeg",
+				url: "logo.jpeg",
 			},
 		},
 		mainEntityOfPage: {
@@ -266,7 +266,7 @@ export default async function BlogPostPage({ params }: Props) {
 								>
 									<h4 className="text-light mb-3">Ready to Get Started?</h4>
 									<p className="text-light opacity-90 mb-4">
-										Contact <a href={siteConfig.gmbUrl} target="_blank" rel="noopener noreferrer" className="text-light-link">Charlotte Garage Door Repair</a> for a free quote on
+										Contact Charlotte Garage Door Repair for a free quote on
 										your garage door project.
 									</p>
 									<div className="d-flex flex-wrap justify-content-center gap-3">

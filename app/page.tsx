@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 			"Charlotte Garage Door Repair | 24/7 Emergency Service",
 		description:
 			"Fast, professional garage door repair, spring replacement, opener installation, and emergency service across Charlotte Metro.",
-		url: "https://charlotte-garagedoorrepair.com",
+		...(siteConfig.url ? { url: siteConfig.url } : {}),
 		type: "website",
 		images: [
 			{
@@ -34,9 +34,7 @@ export const metadata: Metadata = {
 			},
 		],
 	},
-	alternates: {
-		canonical: "https://charlotte-garagedoorrepair.com",
-	},
+	...(siteConfig.url ? { alternates: { canonical: siteConfig.url } } : {}),
 };
 
 export default function Home() {
@@ -56,7 +54,7 @@ export default function Home() {
 											24/7 Garage Door Repair Experts in Charlotte Metro
 										</div>
 										<h1 className="fs-72 fs-xs-10vw text-uppercase wow fadeInUp">
-											<a href={siteConfig.gmbUrl} target="_blank" rel="noopener noreferrer" className="text-light-link">Charlotte <span className="id-color">Garage Door Repair</span></a>
+											Charlotte <span className="id-color">Garage Door Repair</span>
 										</h1>
 									</div>
 								</div>
@@ -64,7 +62,7 @@ export default function Home() {
 								<div className="col-lg-4 col-xl-3">
 									<div className="spacer-double"></div>
 									<p className="mb-3 wow fadeInUp" data-wow-delay=".2s">
-										At <a href={siteConfig.gmbUrl} target="_blank" rel="noopener noreferrer" className="text-light-link">{siteConfig.name}</a>, we provide fast, professional 24/7 garage door repair, torsion spring replacement, cable repair, smart opener installation, and complete door replacements across Charlotte and surrounding communities.
+										At {siteConfig.name}, we provide fast, professional 24/7 garage door repair, torsion spring replacement, cable repair, smart opener installation, and complete door replacements across Charlotte and surrounding communities.
 									</p>
 									<div className="wow fadeInUp" data-wow-delay=".3s">
 										<a
@@ -195,7 +193,7 @@ export default function Home() {
 								Charlotte&apos;s Trusted Local Garage Door Specialists
 							</h2>
 							<p className="wow fadeInUp" data-wow-delay=".6s">
-								<a href={siteConfig.gmbUrl} target="_blank" rel="noopener noreferrer" className="text-light-link">{siteConfig.name}</a> is led by {siteConfig.owner}, bringing over 7 years of industry expertise to homes and businesses across the Charlotte Metro area. We specialize in torsion spring repairs, snapped cables, opener installations, and full door replacements.
+								{siteConfig.name} is led by {siteConfig.owner}, bringing over 7 years of industry expertise to homes and businesses across the Charlotte Metro area. We specialize in torsion spring repairs, snapped cables, opener installations, and full door replacements.
 							</p>
 							<Link
 								className="btn-main fx-slide wow fadeInUp"
@@ -310,10 +308,10 @@ export default function Home() {
 					<div className="row g-4 justify-content-center mb-2">
 						<div className="col-lg-6">
 							<div className="text-center">
-								<div className="subtitle">Welcome to <a href={siteConfig.gmbUrl} target="_blank" rel="noopener noreferrer" className="text-light-link">{siteConfig.name}</a></div>
+								<div className="subtitle">Welcome to {siteConfig.name}</div>
 								<h2>Professional Garage Door Services</h2>
 								<p>
-									From emergency spring and cable repairs to smart opener installation and full door replacements, <a href={siteConfig.gmbUrl} target="_blank" rel="noopener noreferrer" className="text-light-link">{siteConfig.name}</a> delivers fast, reliable service across Charlotte, NC.
+									From emergency spring and cable repairs to smart opener installation and full door replacements, {siteConfig.name} delivers fast, reliable service across Charlotte, NC.
 								</p>
 							</div>
 						</div>
@@ -395,7 +393,7 @@ export default function Home() {
 					<div className="row g-4 justify-content-center">
 						<div className="col-lg-6 text-center">
 							<div className="subtitle id-color">Trusted &amp; Dependable</div>
-							<h2>Why Choose <a href={siteConfig.gmbUrl} target="_blank" rel="noopener noreferrer" className="text-light-link">{siteConfig.name}</a></h2>
+							<h2>Why Choose {siteConfig.name}</h2>
 							<p>
 								We prioritize home security, transparent pricing, and fast emergency response for families and businesses across Charlotte and surrounding communities.
 							</p>

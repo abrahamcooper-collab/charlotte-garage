@@ -14,11 +14,11 @@ export const metadata: Metadata = {
 		title: "Contact Charlotte Garage Door Repair",
 		description:
 			"Get a free quote for garage door repair and 24/7 emergency service in Charlotte Metro. Call (828) 450-2416.",
-		url: "https://charlotte-garagedoorrepair.com/contact",
+		url: "contact",
 		type: "website",
 	},
 	alternates: {
-		canonical: "https://charlotte-garagedoorrepair.com/contact",
+		canonical: "contact",
 	},
 };
 

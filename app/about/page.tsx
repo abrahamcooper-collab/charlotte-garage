@@ -17,11 +17,11 @@ export const metadata: Metadata = {
 		title: "About Charlotte Garage Door Repair",
 		description:
 			"Charlotte's trusted garage door experts led by Jeremy Chisom. 7+ years industry experience, 24/7 emergency service, and quality craftsmanship.",
-		url: "https://charlotte-garagedoorrepair.com/about",
+		url: "about",
 		type: "website",
 	},
 	alternates: {
-		canonical: "https://charlotte-garagedoorrepair.com/about",
+		canonical: "about",
 	},
 };
 
@@ -51,10 +51,10 @@ export default function AboutPage() {
 				<div className="container">
 					<div className="row g-5 align-items-center">
 						<div className="col-lg-6">
-							<div className="subtitle">About <a href={siteConfig.gmbUrl} target="_blank" rel="noopener noreferrer" className="text-light-link">{siteConfig.name}</a></div>
+							<div className="subtitle">About {siteConfig.name}</div>
 							<h2>Charlotte&apos;s Trusted Garage Door Experts</h2>
 							<p>
-								<a href={siteConfig.gmbUrl} target="_blank" rel="noopener noreferrer" className="text-light-link">{siteConfig.name}</a> is led by {siteConfig.owner}, bringing over 7 years of hands-on industry experience to homeowners and businesses throughout the Charlotte Metro area. We specialize in fast garage door repair, high-cycle spring replacement, cable re-tensioning, opener installation, and full door upgrades.
+								{siteConfig.name} is led by {siteConfig.owner}, bringing over 7 years of hands-on industry experience to homeowners and businesses throughout the Charlotte Metro area. We specialize in fast garage door repair, high-cycle spring replacement, cable re-tensioning, opener installation, and full door upgrades.
 							</p>
 							<p>
 								We understand that a broken garage door disrupts your daily schedule and compromises your home&apos;s security. That&apos;s why we provide round-the-clock 24/7 emergency repair dispatch, transparent pricing, and heavy-duty, long-lasting replacement components.

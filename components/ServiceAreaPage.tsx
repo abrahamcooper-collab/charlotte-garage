@@ -75,7 +75,7 @@ export default function ServiceAreaPage({
 							<div className="subtitle">What We Offer</div>
 							<h2>Complete Garage Door Services in {location}</h2>
 							<p>
-								From emergency spring repair and cable replacement to opener installation and full garage door replacements, <a href={siteConfig.gmbUrl} target="_blank" rel="noopener noreferrer" className="text-light-link">{siteConfig.name}</a> provides fast, reliable 24/7 service for homeowners and businesses in {location} and across the Charlotte Metro area.
+								From emergency spring repair and cable replacement to opener installation and full garage door replacements, {siteConfig.name} provides fast, reliable 24/7 service for homeowners and businesses in {location} and across the Charlotte Metro area.
 							</p>
 						</div>
 					</div>
@@ -169,15 +169,19 @@ export default function ServiceAreaPage({
 
 			<section className="bg-color text-light pt-60 pb-50">
 				<div className="container">
-					<div className="row g-4">
-						<div className="col-md-9">
+					<div className="row g-4 align-items-center">
+						<div className="col-md-7">
 							<h3 className="mb-0 fs-32">
 								{ctaHeading ??
 									`Book your ${service.toLowerCase()} in ${location} today.`}
 							</h3>
 						</div>
-						<div className="col-lg-3 text-lg-end">
-							<Link className="btn-main fx-slide btn-line" href="/contact">
+						<div className="col-md-5 text-md-end d-flex gap-2 justify-content-md-end flex-wrap">
+							<a className="btn-main fx-slide btn-line" href={siteConfig.phoneHref}>
+								<i className="icofont-phone me-1"></i>
+								<span>Call Now</span>
+							</a>
+							<Link className="btn-main fx-slide" href="/contact">
 								<span>Get a Free Quote</span>
 							</Link>
 						</div>

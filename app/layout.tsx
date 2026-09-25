@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ExtraWrap from "@/components/ExtraWrap";
 import ScriptReinitializer from "@/components/ScriptReinitializer";
+import { siteConfig } from "@/data/siteConfig";
 import "./globals.css";
 
 export const viewport: Viewport = {
@@ -14,7 +15,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-	metadataBase: new URL("https://charlotte-garagedoorrepair.com"),
+	...(siteConfig.url ? { metadataBase: new URL(siteConfig.url) } : {}),
 	title: {
 		default:
 			"Charlotte Garage Door Repair | 24/7 Emergency Garage Door Service",
@@ -44,7 +45,7 @@ export const metadata: Metadata = {
 	openGraph: {
 		type: "website",
 		locale: "en_US",
-		url: "https://charlotte-garagedoorrepair.com",
+		...(siteConfig.url ? { url: siteConfig.url } : {}),
 		siteName: "Charlotte Garage Door Repair",
 		title:
 			"Charlotte Garage Door Repair | 24/7 Emergency Service",
@@ -97,9 +98,8 @@ export default function RootLayout({
 		"@context": "https://schema.org",
 		"@type": "HomeAndConstructionBusiness",
 		name: "Charlotte Garage Door Repair",
-		image: "https://charlotte-garagedoorrepair.com/logo.jpeg",
-		"@id": "https://charlotte-garagedoorrepair.com",
-		url: "https://charlotte-garagedoorrepair.com",
+		image: "logo.jpeg",
+		...(siteConfig.url ? { "@id": siteConfig.url, url: siteConfig.url } : {}),
 		telephone: "+18284502416",
 		email: "Charlottesgaragedoorrepairs@gmail.com",
 		priceRange: "$$",
@@ -131,9 +131,6 @@ export default function RootLayout({
 				opens: "00:00",
 				closes: "23:59",
 			},
-		],
-		sameAs: [
-			"https://charlotte-garagedoorrepair.com",
 		],
 		areaServed: [
 			{ "@type": "City", name: "Charlotte" },

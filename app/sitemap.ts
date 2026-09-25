@@ -1,8 +1,9 @@
 import { MetadataRoute } from "next";
 import { blogPosts } from "@/data/blogData";
+import { siteConfig } from "@/data/siteConfig";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-	const baseUrl = "https://charlotte-garagedoorrepair.com";
+	const baseUrl = siteConfig.url || "";
 
 	// Generate blog post URLs
 	const blogUrls: MetadataRoute.Sitemap = blogPosts.map((post) => ({
@@ -57,7 +58,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
 	return [
 		{
-			url: baseUrl,
+			url: baseUrl || "/",
 			lastModified: new Date(),
 			changeFrequency: "weekly",
 			priority: 1,

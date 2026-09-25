@@ -8,7 +8,7 @@
 | **Owner / Contact** | Jeremy Chisom |
 | **Phone** | (828) 450-2416 |
 | **Email** | Charlottesgaragedoorrepairs@gmail.com |
-| **Website** | [charlotte-garagedoorrepair.com](https://charlotte-garagedoorrepair.com/) |
+| **Website** | *None* |
 | **Primary Services** | Garage Door Repair, Garage Door Installation, Garage Door Service |
 | **Business Address** | ⚠️ *Needs Verification* (See Address Issue below) |
 | **Hours** | 24/7 Emergency Repair |

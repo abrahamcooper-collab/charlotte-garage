@@ -74,7 +74,7 @@ export default function ExtraWrap() {
 
 					<h5>About Us</h5>
 					<p>
-						At <a href={siteConfig.gmbUrl} target="_blank" rel="noopener noreferrer" className="text-light-link">{siteConfig.name}</a>, we are dedicated to providing fast, reliable 24/7 garage door repair and installation across Charlotte and surrounding communities. Led by industry expert {siteConfig.owner} with 7 years of experience.
+						At {siteConfig.name}, we are dedicated to providing fast, reliable 24/7 garage door repair and installation across Charlotte and surrounding communities. Led by industry expert {siteConfig.owner} with 7 years of experience.
 					</p>
 
 					<div className="social-icons">

@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: ["/api/", "/admin/"],
     },
-    sitemap: "https://charlotte-garagedoorrepair.com/sitemap.xml",
+    sitemap: "sitemap.xml",
   };
 }

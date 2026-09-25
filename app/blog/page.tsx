@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 		title: "Garage Door Blog | Charlotte Garage Door Repair",
 		description:
 			"Expert insights and guides on garage door repair, spring safety, and opener installations. Serving Charlotte Metro.",
-		url: "https://charlotte-garagedoorrepair.com/blog",
+		url: "blog",
 		type: "website",
 		images: [
 			{
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
 		],
 	},
 	alternates: {
-		canonical: "https://charlotte-garagedoorrepair.com/blog",
+		canonical: "blog",
 	},
 };
 

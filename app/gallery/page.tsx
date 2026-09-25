@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 		title: "Our Work Gallery | Charlotte Garage Door Repair",
 		description:
 			"Browse our portfolio of professional garage door repairs and installations throughout Charlotte and surrounding metro areas.",
-		url: "https://charlotte-garagedoorrepair.com/gallery",
+		url: "gallery",
 		type: "website",
 		images: [
 			{
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
 		],
 	},
 	alternates: {
-		canonical: "https://charlotte-garagedoorrepair.com/gallery",
+		canonical: "gallery",
 	},
 };
 

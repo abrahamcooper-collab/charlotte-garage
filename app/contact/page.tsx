@@ -207,7 +207,7 @@ export default function ContactPage() {
 
           <div className="row g-4">
             <div className="col-lg-4">
-              <h4><a href={siteConfig.gmbUrl} target="_blank" rel="noopener noreferrer" className="text-light-link">{siteConfig.name}</a></h4>
+              <h4>{siteConfig.name}</h4>
               <i className="icofont-location-pin me-2 id-color"></i>
               <span>{siteConfig.addressFull}</span>
               <br />

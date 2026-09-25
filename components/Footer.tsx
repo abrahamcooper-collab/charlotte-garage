@@ -18,7 +18,7 @@ export default function Footer() {
 							height={100}
 						/>
 						<p>
-							<a href={siteConfig.gmbUrl} target="_blank" rel="noopener noreferrer" className="text-light-link">{siteConfig.name}</a> is Charlotte&apos;s trusted local garage door company, providing fast 24/7 emergency garage door repair, spring replacement, cable repair, opener installation, and complete maintenance.
+							{siteConfig.name} is Charlotte&apos;s trusted local garage door company, providing fast 24/7 emergency garage door repair, spring replacement, cable repair, opener installation, and complete maintenance.
 						</p>
 						<div className="social-icons mb-sm-30">
 							<Link href="#">
@@ -115,7 +115,7 @@ export default function Footer() {
 						<div className="col-md-12">
 							<div className="de-flex">
 								<div className="de-flex-col">
-									&copy; {new Date().getFullYear()} - <a href={siteConfig.gmbUrl} target="_blank" rel="noopener noreferrer" className="text-light-link">{siteConfig.name}</a> | Charlotte Metro Area
+									&copy; {new Date().getFullYear()} - {siteConfig.name} | Charlotte Metro Area
 								</div>
 								<div className="de-flex-col">
 									<strong>

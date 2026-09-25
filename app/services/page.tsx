@@ -19,11 +19,11 @@ export const metadata: Metadata = {
 		title: "Garage Door Services | Charlotte Garage Door Repair",
 		description:
 			"Garage door repair, spring replacement, opener installation, emergency 24/7 service, and door replacement across Charlotte Metro.",
-		url: "https://charlotte-garagedoorrepair.com/services",
+		url: "services",
 		type: "website",
 	},
 	alternates: {
-		canonical: "https://charlotte-garagedoorrepair.com/services",
+		canonical: "services",
 	},
 };
 
@@ -133,7 +133,7 @@ export default function ServicesPage() {
 							<div className="subtitle">What We Offer</div>
 							<h2>Professional Garage Door Repair &amp; Service in Charlotte, NC</h2>
 							<p>
-								From 24/7 emergency spring repair and cable replacement to smart opener installation and full door replacements, <a href={siteConfig.gmbUrl} target="_blank" rel="noopener noreferrer" className="text-light-link">{siteConfig.name}</a> is your trusted local specialist across Charlotte, Waxhaw, Monroe, Matthews, and surrounding communities.
+								From 24/7 emergency spring repair and cable replacement to smart opener installation and full door replacements, {siteConfig.name} is your trusted local specialist across Charlotte, Waxhaw, Monroe, Matthews, and surrounding communities.
 							</p>
 						</div>
 					</div>

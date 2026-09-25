@@ -4,9 +4,9 @@
 export const siteConfig = {
 	name: "Charlotte Garage Door Repair",
 	legalName: "Charlotte Garage Door Repair",
-	url: "https://charlotte-garagedoorrepair.com",
+	url: "",
 	phoneDisplay: "(828) 450-2416",
-	phoneHref: "+18284502416",
+	phoneHref: "tel:+18284502416",
 	phone: "(828) 450-2416",
 	phoneClean: "+18284502416",
 	email: "Charlottesgaragedoorrepairs@gmail.com",
@@ -23,7 +23,7 @@ export const siteConfig = {
 	owner: "Jeremy Chisom",
 	yearsInIndustry: "7 years",
 	geo: { latitude: 34.9243, longitude: -80.7431 },
-	gmbUrl: "https://charlotte-garagedoorrepair.com",
+	gmbUrl: "",
 	social: {
 		facebook: "#",
 		instagram: "#",

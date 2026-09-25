@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import BeforeAfterSection from "@/components/BeforeAfterSection";
+import { siteConfig } from "@/data/siteConfig";
 
 export interface ServiceStep {
 	icon: string; // Font Awesome class, e.g. "fas fa-spray-can-sparkles"
@@ -209,12 +210,16 @@ export default function ServiceDetail({
 
 			<section className="bg-color text-light pt-60 pb-50">
 				<div className="container">
-					<div className="row g-4">
-						<div className="col-md-9">
+					<div className="row g-4 align-items-center">
+						<div className="col-md-7">
 							<h3 className="mb-0 fs-32">{ctaHeading}</h3>
 						</div>
-						<div className="col-lg-3 text-lg-end">
-							<Link className="btn-main fx-slide btn-line" href="/contact">
+						<div className="col-md-5 text-md-end d-flex gap-2 justify-content-md-end flex-wrap">
+							<a className="btn-main fx-slide btn-line" href={siteConfig.phoneHref}>
+								<i className="icofont-phone me-1"></i>
+								<span>Call Now</span>
+							</a>
+							<Link className="btn-main fx-slide" href="/contact">
 								<span>Get a Free Quote</span>
 							</Link>
 						</div>
