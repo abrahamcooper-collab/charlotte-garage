@@ -2,22 +2,44 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
+import { usePathname } from "next/navigation";
 import { siteConfig } from "@/data/siteConfig";
 
 export default function Header() {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
+	const pathname = usePathname();
+
+	const closeMobileMenu = useCallback(() => {
+		const header = document.querySelector("header") as HTMLElement | null;
+		const menuBtn = document.querySelector("#menu-btn");
+
+		if (header) {
+			header.classList.remove("menu-open");
+			header.style.height = "";
+		}
+		if (menuBtn) {
+			menuBtn.classList.remove("menu-open");
+		}
+		document.body.style.overflow = "";
+		if (typeof window !== "undefined" && (window as any).mobile_menu_show !== undefined) {
+			(window as any).mobile_menu_show = 0;
+		}
+		setIsMenuOpen(false);
+	}, []);
+
+	// Automatically close mobile menu on route change
+	useEffect(() => {
+		closeMobileMenu();
+	}, [pathname, closeMobileMenu]);
 
 	useEffect(() => {
 		const handleMenuClick = () => {
-			const header = document.querySelector("header");
+			const header = document.querySelector("header") as HTMLElement | null;
 			const menuBtn = document.querySelector("#menu-btn");
 
 			if (header?.classList.contains("menu-open")) {
-				header.classList.remove("menu-open");
-				menuBtn?.classList.remove("menu-open");
-				document.body.style.overflow = "";
-				setIsMenuOpen(false);
+				closeMobileMenu();
 			} else {
 				header?.classList.add("menu-open");
 				menuBtn?.classList.add("menu-open");
@@ -30,14 +52,13 @@ export default function Header() {
 		menuBtn?.addEventListener("click", handleMenuClick);
 
 		// Close menu when clicking on any menu link inside mainmenu
-		const handleLinkClick = () => {
-			const header = document.querySelector("header");
-			const menuBtn = document.querySelector("#menu-btn");
-
-			header?.classList.remove("menu-open");
-			menuBtn?.classList.remove("menu-open");
-			document.body.style.overflow = "";
-			setIsMenuOpen(false);
+		const handleLinkClick = (e: Event) => {
+			const target = e.currentTarget as HTMLAnchorElement;
+			if (target.getAttribute("href") === "#") {
+				e.preventDefault();
+				return;
+			}
+			closeMobileMenu();
 		};
 
 		const menuLinks = document.querySelectorAll("#mainmenu a");
@@ -52,7 +73,7 @@ export default function Header() {
 			});
 			document.body.style.overflow = "";
 		};
-	}, []);
+	}, [closeMobileMenu]);
 
 	return (
 		<header

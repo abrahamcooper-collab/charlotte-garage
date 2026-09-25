@@ -492,6 +492,10 @@ body,
 
 /* Mobile Navigation Drawer Full Responsiveness & All Options Visibility */
 @media (max-width: 991px) {
+	header:not(.menu-open) {
+		height: auto !important;
+	}
+
 	header #mainmenu {
 		display: none;
 	}
@@ -542,40 +546,73 @@ body,
 		color: var(--candy-red) !important;
 	}
 
+	header.menu-open #mainmenu li ul,
 	header.menu-open #mainmenu li ul.innermenue {
-		display: block !important;
+		display: grid !important;
+		grid-template-columns: repeat(auto-fill, minmax(135px, 1fr)) !important;
+		gap: 6px 8px !important;
 		position: static !important;
+		visibility: visible !important;
+		opacity: 1 !important;
 		width: 100% !important;
-		background: rgba(255, 255, 255, 0.05) !important;
-		padding: 8px 10px !important;
+		height: auto !important;
+		max-height: none !important;
+		background: rgba(255, 255, 255, 0.04) !important;
+		padding: 10px 10px !important;
 		border-radius: 8px !important;
 		margin: 6px 0 10px 0 !important;
-		border: 1px solid rgba(255, 255, 255, 0.08) !important;
+		border: 1px solid rgba(255, 255, 255, 0.1) !important;
+		box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.4) !important;
 	}
 
+	header.menu-open #mainmenu li ul li,
 	header.menu-open #mainmenu li ul.innermenue li {
 		display: block !important;
+		visibility: visible !important;
+		opacity: 1 !important;
 		width: 100% !important;
 		border: none !important;
-		margin: 2px 0 !important;
+		margin: 0 !important;
+		padding: 0 !important;
 	}
 
+	header.menu-open #mainmenu li ul li a,
 	header.menu-open #mainmenu li ul.innermenue li a {
-		display: block !important;
-		font-size: 13.5px !important;
+		display: flex !important;
+		align-items: center !important;
+		font-size: 13px !important;
 		font-weight: 500 !important;
-		color: rgba(255, 255, 255, 0.85) !important;
-		padding: 8px 12px !important;
+		color: rgba(255, 255, 255, 0.95) !important;
+		padding: 8px 10px !important;
+		background: rgba(255, 255, 255, 0.05) !important;
 		border-radius: 6px !important;
-		transition: background 0.2s ease, color 0.2s ease !important;
+		border: 1px solid rgba(255, 255, 255, 0.08) !important;
+		transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease !important;
 		white-space: normal !important;
 		word-break: break-word !important;
+		line-height: 1.3 !important;
+		visibility: visible !important;
+		opacity: 1 !important;
 	}
 
+	header.menu-open #mainmenu li ul li a::before,
+	header.menu-open #mainmenu li ul.innermenue li a::before {
+		content: "›" !important;
+		color: #e31b23 !important;
+		font-size: 16px !important;
+		font-weight: 700 !important;
+		margin-right: 6px !important;
+		line-height: 1 !important;
+		flex-shrink: 0 !important;
+	}
+
+	header.menu-open #mainmenu li ul li a:hover,
+	header.menu-open #mainmenu li ul li a:active,
 	header.menu-open #mainmenu li ul.innermenue li a:hover,
 	header.menu-open #mainmenu li ul.innermenue li a:active {
-		background: rgba(227, 27, 35, 0.22) !important;
+		background: rgba(227, 27, 35, 0.25) !important;
 		color: #ffffff !important;
+		border-color: rgba(227, 27, 35, 0.4) !important;
 	}
 }
 

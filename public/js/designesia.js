@@ -1342,17 +1342,13 @@
          // navigation for mobile
          // --------------------------------------------------
          jQuery('#menu-btn').on("click", function() {
-
-            var h = jQuery('header')[0].scrollHeight;
-            
              if (mobile_menu_show === 0) {
                  jQuery('header').addClass('menu-open');
-                 jQuery('header').css('height',$(window).innerHeight());
                  mobile_menu_show = 1;
                  jQuery(this).addClass("menu-open");
              } else {
-                jQuery('header').removeClass('menu-open');
-                jQuery('header').css('height','auto');
+                 jQuery('header').removeClass('menu-open');
+                 jQuery('header').css('height', '');
                  mobile_menu_show = 0;
                  jQuery(this).removeClass("menu-open");
              }
