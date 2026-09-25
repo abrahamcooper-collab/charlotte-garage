@@ -152,8 +152,8 @@ export default function ServiceDetail({
 					subtitle="Real Results"
 					title={beforeAfter.title}
 					description={beforeAfter.description}
-					beforeImage={beforeAfter.beforeImage ?? "/images/before-after/1b.png"}
-					afterImage={beforeAfter.afterImage ?? "/images/before-after/1a.png"}
+					beforeImage={beforeAfter.beforeImage ?? "/images/garage-door-repair/IMG_0068.jpg"}
+					afterImage={beforeAfter.afterImage ?? "/images/garage-door-installation/IMG_9509.jpg"}
 					beforeAlt="Before"
 					afterAlt="After"
 					imageWidth={800}

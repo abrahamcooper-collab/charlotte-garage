@@ -47,7 +47,7 @@ export default function ContactPage() {
             <div className="col-lg-6">
               <div className="p-40 h-100 jarallax rounded-1 overflow-hidden">
                 <img
-                  src="/images/background/2.webp"
+                  src="/images/hero/hero-2.jpg"
                   className="jarallax-img"
                   alt=""
                 />
