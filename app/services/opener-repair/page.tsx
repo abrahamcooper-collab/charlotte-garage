@@ -13,7 +13,7 @@ export default function OpenerRepairPage() {
 			subtitle="Opener Diagnostics"
 			heading="Garage Door Opener Repair in Charlotte, NC"
 			intro="If your garage door opener hums without moving, fails to respond to remotes, or reverses spontaneously, Charlotte Garage Door Repair is here to help. We repair motor assemblies, drive gears, circuit boards, safety sensors, and wall consoles for all major opener brands."
-			heroImage="/images/opener-repair/IMG_0764.jpg"
+			heroImage="/images/opener-repair/IMG_8733.jpg"
 			bandImage="/images/opener-repair/IMG_0766.jpg"
 			steps={[
 				{
@@ -58,6 +58,32 @@ export default function OpenerRepairPage() {
 				"Loud grinding noise coming from opener motor",
 				"Blinking safety light indicators",
 			]}
+			gallery={{
+				title: "Opener Repair Work",
+				description: "Drive Gear, Chain Sprocket & Trolley Carriage Repairs",
+				images: [
+					{
+						src: "/images/opener-repair/IMG_9509.jpg",
+						alt: "Garage door opener trolley drawbar arm and emergency release linkage",
+						title: "Trolley Carriage & Drawbar Arm Linkage",
+					},
+					{
+						src: "/images/opener-repair/IMG_9515.jpg",
+						alt: "Interior view of opener mounting bracket and strut between door window panels",
+						title: "Center Reinforcement Strut & Opener Pivot Bracket",
+					},
+					{
+						src: "/images/opener-repair/IMG_0766.jpg",
+						alt: "Worn garage door opener drive sprocket and drive chain covered in metal shavings",
+						title: "Stripped Drive Sprocket & Gear Wear Repair",
+					},
+					{
+						src: "/images/opener-repair/IMG_8733.jpg",
+						alt: "Damaged garage door opener drive gear shaft and chain sprocket",
+						title: "Drive Gear Housing & Gear Replacement",
+					},
+				],
+			}}
 			ctaHeading="Opener not working properly? Call (828) 450-2416 for fast opener repair!"
 		/>
 	);

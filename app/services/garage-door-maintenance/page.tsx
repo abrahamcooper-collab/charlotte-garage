@@ -13,8 +13,8 @@ export default function MaintenancePage() {
 			subtitle="Preventative Maintenance"
 			heading="Annual Garage Door Maintenance & Inspection"
 			intro="Prevent costly spring snaps, cable off-tracks, and opener failures with routine annual garage door maintenance. Our technicians perform a rigorous multi-point check, balance calibration, hardware tightening, and lubrication to keep your system performing flawlessly."
-			heroImage="/images/garage-door-repair/IMG_8966.jpg"
-			bandImage="/images/garage-door-repair/IMG_9098.jpg"
+			heroImage="/images/residential-doors/IMG_0774.jpg"
+			bandImage="/images/garage-door-repair/IMG_9100.jpg"
 			steps={[
 				{
 					icon: "fas fa-clipboard-list",
@@ -58,6 +58,27 @@ export default function MaintenancePage() {
 				"Homeowners preparing for winter/summer extremes",
 				"Rental property owners wanting reliable operation",
 			]}
+			gallery={{
+				title: "Maintenance Work Photos",
+				description: "Routine Multi-Point Hardware Inspections & Track Servicing",
+				images: [
+					{
+						src: "/images/garage-door-repair/IMG_0769.jpg",
+						alt: "Frayed weather seal near roller track bracket",
+						title: "Jamb Weatherstrip & Roller Bracket Inspection",
+					},
+					{
+						src: "/images/garage-door-repair/IMG_9098.jpg",
+						alt: "Damaged commercial overhead bay door hardware",
+						title: "Sectional Bay Door Hardware Inspection",
+					},
+					{
+						src: "/images/spring-replacement/IMG_0780.jpg",
+						alt: "Newly installed and wound dual torsion springs on header",
+						title: "Spring Tension Tune-Up & Lubrication",
+					},
+				],
+			}}
 			ctaHeading="Protect your garage door system with routine maintenance. Call (828) 450-2416!"
 		/>
 	);

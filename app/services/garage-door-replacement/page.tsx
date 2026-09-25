@@ -13,8 +13,8 @@ export default function GarageDoorReplacementPage() {
 			subtitle="Full Replacement"
 			heading="Garage Door Replacement Services in Charlotte, NC"
 			intro="When an old garage door suffers severe panel damage, structural rot, or constant mechanical breakdowns, replacement is often the most cost-effective solution. Charlotte Garage Door Repair replaces aging doors with high-R-value insulated models designed to last."
-			heroImage="/images/garage-door-installation/IMG_9515.jpg"
-			bandImage="/images/garage-door-repair/IMG_8500.jpg"
+			heroImage="/images/door-replacement/IMG_0068.jpg"
+			bandImage="/images/door-installation/C 4.jpeg"
 			steps={[
 				{
 					icon: "fas fa-home",
@@ -58,6 +58,27 @@ export default function GarageDoorReplacementPage() {
 				"Upgrading home aesthetics before listing on market",
 				"Improving security and noise dampening",
 			]}
+			gallery={{
+				title: "Replacement Work Photos",
+				description: "Frame Inspection & Full Door System Replacements",
+				images: [
+					{
+						src: "/images/door-replacement/IMG_0068.jpg",
+						alt: "Technician inspecting damaged exterior door frame and trim on residential garage",
+						title: "Opening Casing & Frame Replacement Inspection",
+					},
+					{
+						src: "/images/door-installation/C 8.jpeg",
+						alt: "High-lift commercial sectional door with overhead torsion shaft installed",
+						title: "High-Lift Counterbalance System Assembly",
+					},
+					{
+						src: "/images/door-installation/C 12.jpeg",
+						alt: "Industrial building bay construction showing roll-up door installation",
+						title: "New Overhead Door Panel Fitting",
+					},
+				],
+			}}
 			ctaHeading="Ready to replace your garage door? Call (828) 450-2416 for a free estimate!"
 		/>
 	);

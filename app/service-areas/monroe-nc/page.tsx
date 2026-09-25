@@ -28,7 +28,7 @@ export default function MonroeNCPage() {
 					text: "Emergency technicians ready to dispatch day or night in Monroe.",
 				},
 			]}
-			image="/images/opener-repair/IMG_0764.jpg"
+			image="/images/opener-installation/IMG_0764.jpg"
 			ctaHeading="Need garage door repair in Monroe, NC? Call (828) 450-2416!"
 		/>
 	);

@@ -69,7 +69,7 @@ export default function AboutPage() {
 						</div>
 						<div className="col-lg-6">
 							<img
-								src="/images/cable-repair/IMG_0769.jpg"
+								src="/images/garage-door-repair/IMG_0769.jpg"
 								className="img-fluid rounded"
 								alt="Charlotte Garage Door Repair Service"
 							/>

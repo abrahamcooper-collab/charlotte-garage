@@ -24,6 +24,15 @@ export interface ServiceDetailProps {
 		beforeImage?: string;
 		afterImage?: string;
 	};
+	gallery?: {
+		title?: string;
+		description?: string;
+		images: Array<{
+			src: string;
+			alt: string;
+			title?: string;
+		}>;
+	};
 	ctaHeading: string;
 }
 
@@ -38,6 +47,7 @@ export default function ServiceDetail({
 	benefits,
 	idealFor,
 	beforeAfter,
+	gallery,
 	ctaHeading,
 }: ServiceDetailProps) {
 	return (
@@ -147,13 +157,49 @@ export default function ServiceDetail({
 				</div>
 			</section>
 
+			{gallery && gallery.images && gallery.images.length > 0 && (
+				<section className="bg-dark-2">
+					<div className="container">
+						<div className="row g-4 justify-content-center mb-4">
+							<div className="col-lg-8 text-center">
+								<div className="subtitle">{gallery.title || "Project Showcase"}</div>
+								<h2>{gallery.description || "Real Work Photos From Our Service Projects"}</h2>
+							</div>
+						</div>
+						<div className="row g-4 justify-content-center">
+							{gallery.images.map((img, idx) => (
+								<div key={idx} className={gallery.images.length <= 2 ? "col-md-6" : "col-md-4 col-sm-6"}>
+									<div className="hover rounded-1 overflow-hidden relative text-light">
+										<div style={{ position: "relative", width: "100%", height: 260 }}>
+											<Image
+												src={img.src}
+												alt={img.alt}
+												fill
+												className="hover-scale-1-1"
+												style={{ objectFit: "cover" }}
+												sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+											/>
+										</div>
+										{img.title && (
+											<div className="abs z-2 bottom-0 p-3 w-100 bg-blur">
+												<p className="mb-0 fs-14 fw-bold">{img.title}</p>
+											</div>
+										)}
+									</div>
+								</div>
+							))}
+						</div>
+					</div>
+				</section>
+			)}
+
 			{beforeAfter && (
 				<BeforeAfterSection
 					subtitle="Real Results"
 					title={beforeAfter.title}
 					description={beforeAfter.description}
-					beforeImage={beforeAfter.beforeImage ?? "/images/garage-door-repair/IMG_0068.jpg"}
-					afterImage={beforeAfter.afterImage ?? "/images/garage-door-installation/IMG_9509.jpg"}
+					beforeImage={beforeAfter.beforeImage ?? "/images/door-replacement/IMG_0068.jpg"}
+					afterImage={beforeAfter.afterImage ?? "/images/opener-repair/IMG_9509.jpg"}
 					beforeAlt="Before"
 					afterAlt="After"
 					imageWidth={800}

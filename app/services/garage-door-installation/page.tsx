@@ -13,8 +13,8 @@ export default function GarageDoorInstallationPage() {
 			subtitle="New Door Installation"
 			heading="Residential Garage Door Installation in Charlotte, NC"
 			intro="Upgrade your home's curb appeal, energy efficiency, and security with professional garage door installation from Charlotte Garage Door Repair. We offer top-quality insulated steel, carriage house, and modern garage doors customized for your home."
-			heroImage="/images/garage-door-installation/IMG_9509.jpg"
-			bandImage="/images/garage-door-installation/IMG_8499.jpg"
+			heroImage="/images/door-installation/C6.jpeg"
+			bandImage="/images/door-installation/C 5.jpeg"
 			steps={[
 				{
 					icon: "fas fa-ruler-combined",
@@ -58,6 +58,42 @@ export default function GarageDoorInstallationPage() {
 				"Enhancing home resale value",
 				"Quiet operation for bedrooms over garages",
 			]}
+			gallery={{
+				title: "Installation Projects",
+				description: "Recent Commercial & Residential Overhead Door Installations",
+				images: [
+					{
+						src: "/images/door-installation/C7.jpeg",
+						alt: "Industrial facility exterior featuring black commercial roll-up doors",
+						title: "Black Roll-Up Commercial Door Installation",
+					},
+					{
+						src: "/images/door-installation/C 1.jpeg",
+						alt: "Commercial overhead garage door vertical track and frame installation",
+						title: "Track & Framing Installation",
+					},
+					{
+						src: "/images/door-installation/C 3.jpeg",
+						alt: "Technician using scissor lift to install tall commercial sectional door panels",
+						title: "High-Bay Sectional Panel Stacking",
+					},
+					{
+						src: "/images/door-installation/C 8.jpeg",
+						alt: "High-lift commercial sectional door with overhead torsion shaft installed",
+						title: "High-Lift Track & Torsion Counterbalance Mount",
+					},
+					{
+						src: "/images/door-installation/C 10.jpeg",
+						alt: "Interior staging of commercial sectional door tracks and torsion hardware",
+						title: "Hardware Staging & Track Alignment",
+					},
+					{
+						src: "/images/door-installation/C 13.jpeg",
+						alt: "Two commercial roll-up garage doors installed on corrugated metal exterior",
+						title: "Completed Bay Door Exterior Installation",
+					},
+				],
+			}}
 			ctaHeading="Upgrade your home with a new garage door today. Call (828) 450-2416!"
 		/>
 	);

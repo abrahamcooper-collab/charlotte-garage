@@ -13,8 +13,8 @@ export default function GarageDoorServicePage() {
 			subtitle="Routine Service"
 			heading="Comprehensive Garage Door Service & Tune-Up"
 			intro="Regular maintenance and servicing extend the lifespan of your garage door while preventing sudden spring or cable breakdowns. Our comprehensive tune-up inspects every moving component, tightens hardware, adjusts track clearances, and lubricates all wear points."
-			heroImage="/images/garage-door-repair/IMG_0774.jpg"
-			bandImage="/images/garage-door-repair/IMG_8965.jpg"
+			heroImage="/images/residential-doors/IMG_0774.jpg"
+			bandImage="/images/garage-door-repair/IMG_9100.jpg"
 			steps={[
 				{
 					icon: "fas fa-search",
@@ -58,6 +58,27 @@ export default function GarageDoorServicePage() {
 				"Homeowners wanting reliable daily performance",
 				"Protecting garage door warranty compliance",
 			]}
+			gallery={{
+				title: "Service Inspection Photos",
+				description: "Track Alignment, Structural Struts & Spring Balance Inspections",
+				images: [
+					{
+						src: "/images/residential-doors/IMG_0774.jpg",
+						alt: "Interior ceiling view of reinforced horizontal garage door tracks and struts",
+						title: "Horizontal Track Run & Reinforcement Strut Inspection",
+					},
+					{
+						src: "/images/garage-door-repair/IMG_0071.jpg",
+						alt: "Vertical garage door track alignment along white exterior jamb casing",
+						title: "Jamb Casing & Vertical Track Alignment",
+					},
+					{
+						src: "/images/spring-replacement/IMG_0780.jpg",
+						alt: "Newly installed and wound dual torsion springs on garage door header",
+						title: "Torsion Spring Counterbalance Calibration",
+					},
+				],
+			}}
 			ctaHeading="Schedule your garage door tune-up today. Call (828) 450-2416!"
 		/>
 	);

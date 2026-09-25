@@ -13,8 +13,8 @@ export default function CableRepairPage() {
 			subtitle="Cable Service"
 			heading="Garage Door Cable Repair & Replacement in Charlotte, NC"
 			intro="Garage door lifting cables work in tandem with your torsion springs to raise hundreds of pounds of door weight smoothly. Frayed, loose, or snapped cables cause doors to hang crookedly or crash unexpectedly. We provide expert cable rethreading and replacement."
-			heroImage="/images/cable-repair/IMG_0769.jpg"
-			bandImage="/images/cable-repair/IMG_9511.jpg"
+			heroImage="/images/cable-repair/IMG_9511.jpg"
+			bandImage="/images/cable-repair/IMG_9987.jpg"
 			steps={[
 				{
 					icon: "fas fa-exclamation-triangle",
@@ -58,6 +58,32 @@ export default function CableRepairPage() {
 				"Door sticking halfway up the track",
 				"Complete preventive hardware overhauls",
 			]}
+			gallery={{
+				title: "Cable Repair Photos",
+				description: "Real Work Photos of Cable Drum Alignment, Spooling & Cable Tensioning",
+				images: [
+					{
+						src: "/images/cable-repair/IMG_9513.jpg",
+						alt: "Close-up of wound garage door lift cable and stop sleeve on drum",
+						title: "Cable Drum & Stop Sleeve Winding",
+					},
+					{
+						src: "/images/cable-repair/IMG_9516.jpg",
+						alt: "Dislodged garage door lift cable unspooled from cable drum",
+						title: "Thrown Cable Inspection at Flag Bracket",
+					},
+					{
+						src: "/images/cable-repair/IMG_9518.jpg",
+						alt: "Displaced cable drum and bare torsion shaft on garage door",
+						title: "Cable Drum Reset & Tension Balancing",
+					},
+					{
+						src: "/images/cable-repair/IMG_9987.jpg",
+						alt: "Top-down view of lift cable spooling from drum down the track line",
+						title: "Galvanized Steel Cable Track Alignment",
+					},
+				],
+			}}
 			ctaHeading="Frayed or loose garage door cables? Call (828) 450-2416 today!"
 		/>
 	);

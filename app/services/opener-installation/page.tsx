@@ -13,8 +13,8 @@ export default function OpenerInstallationPage() {
 			subtitle="Smart Opener Installation"
 			heading="Garage Door Opener Installation in Charlotte, NC"
 			intro="Upgrade your daily convenience and home security with a modern Wi-Fi enabled garage door opener. Charlotte Garage Door Repair installs whisper-quiet belt drives, heavy-duty chain drives, and wall-mount jackshaft openers featuring battery backup and smartphone app integration."
-			heroImage="/images/opener-repair/IMG_8733.jpg"
-			bandImage="/images/opener-repair/IMG_8781.jpg"
+			heroImage="/images/opener-installation/IMG_0764.jpg"
+			bandImage="/images/opener-installation/IMG_8781.jpg"
 			steps={[
 				{
 					icon: "fas fa-cog",
@@ -58,6 +58,27 @@ export default function OpenerInstallationPage() {
 				"New garage door installation projects",
 				"Adding battery backup for storm reliability",
 			]}
+			gallery={{
+				title: "Opener Installation Projects",
+				description: "Installed Belt-Drive, Smart Motor Heads & Ceiling Mount Assemblies",
+				images: [
+					{
+						src: "/images/opener-installation/IMG_0764.jpg",
+						alt: "Newly installed Genie Model 2028 garage door opener motor head illuminated",
+						title: "Genie Smart Motor Head Installation",
+					},
+					{
+						src: "/images/opener-installation/IMG_8781.jpg",
+						alt: "Modern belt-drive garage door opener installed and operating wood carriage door",
+						title: "Belt-Drive Opener Mounted to Carriage Door",
+					},
+					{
+						src: "/images/opener-installation/IMG_8782.jpg",
+						alt: "Installed garage door opener motor head with safety release cord and tag",
+						title: "Emergency Release Cord & Safety Setup",
+					},
+				],
+			}}
 			ctaHeading="Upgrade to a smart garage door opener! Call (828) 450-2416 today!"
 		/>
 	);

@@ -13,8 +13,8 @@ export default function EmergencyRepairPage() {
 			subtitle="24/7 Emergency Dispatch"
 			heading="24/7 Emergency Garage Door Repair in Charlotte, NC"
 			intro="A broken garage door never happens at a convenient time. Whether your door snapped a cable at midnight or jumped off track right before your morning commute, Charlotte Garage Door Repair provides fast 24/7 emergency dispatch to secure your home."
-			heroImage="/images/spring-repair/IMG_0770.jpg"
-			bandImage="/images/spring-repair/IMG_0777.jpg"
+			heroImage="/images/24-7-emergency-repair/IMG_8965.jpg"
+			bandImage="/images/24-7-emergency-repair/IMG_8966.jpg"
 			steps={[
 				{
 					icon: "fas fa-phone-alt",
@@ -58,6 +58,27 @@ export default function EmergencyRepairPage() {
 				"Snapped torsion or extension springs",
 				"Emergency security situations",
 			]}
+			gallery={{
+				title: "Emergency Service Dispatch",
+				description: "On-Site Photos of Critical Off-Track & Jammed Door Emergencies",
+				images: [
+					{
+						src: "/images/24-7-emergency-repair/IMG_8965.jpg",
+						alt: "Severely crooked derailed garage door stuck mid-track with yellow caution tape",
+						title: "Off-Track Derailed Door Emergency Reset",
+					},
+					{
+						src: "/images/24-7-emergency-repair/IMG_8966.jpg",
+						alt: "Off-track garage door jammed at steep angle with cars trapped inside",
+						title: "Jammed Door Safety Line & Cable Reset",
+					},
+					{
+						src: "/images/spring-replacement/IMG_0770.jpg",
+						alt: "Snapped torsion spring with wide break gap on residential garage door",
+						title: "Emergency Snapped Torsion Spring Replacement",
+					},
+				],
+			}}
 			ctaHeading="Stuck with a broken garage door? Call (828) 450-2416 for 24/7 emergency repair!"
 		/>
 	);

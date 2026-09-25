@@ -13,8 +13,8 @@ export default function SpringRepairPage() {
 			subtitle="Spring Replacement"
 			heading="Garage Door Spring Repair & Replacement in Charlotte, NC"
 			intro="Garage door springs do the heavy lifting for your door. When a spring snaps, your door becomes impossibly heavy and dangerous to operate. We provide safe, professional torsion and extension spring replacement using high-cycle oil-tempered steel springs."
-			heroImage="/images/spring-repair/IMG_0770.jpg"
-			bandImage="/images/spring-repair/IMG_0778.jpg"
+			heroImage="/images/spring-replacement/IMG_0770.jpg"
+			bandImage="/images/spring-replacement/IMG_0778.jpg"
 			steps={[
 				{
 					icon: "fas fa-shield-virus",
@@ -58,6 +58,42 @@ export default function SpringRepairPage() {
 				"Heavy doors requiring manual strain to open",
 				"Preventative replacement for old springs",
 			]}
+			gallery={{
+				title: "Spring Repair Photos",
+				description: "Real Examples of Broken Spring Replacements & Dual Spring Tensioning",
+				images: [
+					{
+						src: "/images/spring-replacement/IMG_8499.jpg",
+						alt: "Severed residential torsion spring above opener rail",
+						title: "Snapped Residential Torsion Spring",
+					},
+					{
+						src: "/images/spring-replacement/IMG_8500.jpg",
+						alt: "Broken torsion spring on residential garage door header",
+						title: "Broken Coil Gap Inspection",
+					},
+					{
+						src: "/images/spring-replacement/IMG_0771.jpg",
+						alt: "Sheared coil and center support plate",
+						title: "Center Support & Bearing Plate Inspection",
+					},
+					{
+						src: "/images/spring-replacement/IMG_0777.jpg",
+						alt: "Snapped garage door torsion spring laying in two pieces on floor",
+						title: "Uninstalled Broken Spring Replacement",
+					},
+					{
+						src: "/images/spring-replacement/IMG_0780.jpg",
+						alt: "Newly installed and wound dual torsion springs",
+						title: "Completed Dual Torsion Spring Replacement",
+					},
+					{
+						src: "/images/spring-replacement/IMG_8787.jpg",
+						alt: "Broken torsion spring snapped near winding cone",
+						title: "Winding Cone Area Break Inspection",
+					},
+				],
+			}}
 			ctaHeading="Broken garage door spring? Call (828) 450-2416 for safe spring replacement!"
 		/>
 	);

@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 		type: "website",
 		images: [
 			{
-				url: "/images/opener-repair/IMG_0764.jpg",
+				url: "/images/opener-installation/IMG_0764.jpg",
 				width: 1200,
 				height: 630,
 				alt: "Garage Door Blog",
