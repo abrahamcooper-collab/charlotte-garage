@@ -38,6 +38,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
 		"huntersville-nc",
 		"mooresville-nc",
 		"concord-nc",
+		"gastonia-nc",
+		"shelby-nc",
+		"kings-mountain-nc",
+		"lake-wylie-sc",
+		"york-sc",
+		"salisbury-nc",
+		"locust-nc",
+		"lancaster-sc",
+		"statesville-nc",
+		"troutman-nc",
+		"mount-holly-nc",
+		"belmont-nc",
+		"denver-nc",
+		"kannapolis-nc",
+		"cornelius-nc",
+		"midland-nc",
 	];
 
 	const serviceUrls: MetadataRoute.Sitemap = servicePaths.map((slug) => ({

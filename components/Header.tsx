@@ -263,6 +263,86 @@ export default function Header() {
 													Concord, NC
 												</Link>
 											</li>
+											<li>
+												<Link href="/service-areas/gastonia-nc">
+													Gastonia, NC
+												</Link>
+											</li>
+											<li>
+												<Link href="/service-areas/shelby-nc">
+													Shelby, NC
+												</Link>
+											</li>
+											<li>
+												<Link href="/service-areas/kings-mountain-nc">
+													Kings Mountain, NC
+												</Link>
+											</li>
+											<li>
+												<Link href="/service-areas/lake-wylie-sc">
+													Lake Wylie, SC
+												</Link>
+											</li>
+											<li>
+												<Link href="/service-areas/york-sc">
+													York, SC
+												</Link>
+											</li>
+											<li>
+												<Link href="/service-areas/salisbury-nc">
+													Salisbury, NC
+												</Link>
+											</li>
+											<li>
+												<Link href="/service-areas/locust-nc">
+													Locust, NC
+												</Link>
+											</li>
+											<li>
+												<Link href="/service-areas/lancaster-sc">
+													Lancaster, SC
+												</Link>
+											</li>
+											<li>
+												<Link href="/service-areas/statesville-nc">
+													Statesville, NC
+												</Link>
+											</li>
+											<li>
+												<Link href="/service-areas/troutman-nc">
+													Troutman, NC
+												</Link>
+											</li>
+											<li>
+												<Link href="/service-areas/mount-holly-nc">
+													Mount Holly, NC
+												</Link>
+											</li>
+											<li>
+												<Link href="/service-areas/belmont-nc">
+													Belmont, NC
+												</Link>
+											</li>
+											<li>
+												<Link href="/service-areas/denver-nc">
+													Denver, NC
+												</Link>
+											</li>
+											<li>
+												<Link href="/service-areas/kannapolis-nc">
+													Kannapolis, NC
+												</Link>
+											</li>
+											<li>
+												<Link href="/service-areas/cornelius-nc">
+													Cornelius, NC
+												</Link>
+											</li>
+											<li>
+												<Link href="/service-areas/midland-nc">
+													Midland, NC
+												</Link>
+											</li>
 										</ul>
 									</li>
 									<li>

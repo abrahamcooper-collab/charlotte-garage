@@ -380,9 +380,9 @@ header.scroll-down #mainmenu > li > a {
 /* Compact 2-Column Mega Dropdown for Services and Service Areas */
 @media (min-width: 992px) {
 	#mainmenu li ul.innermenue {
-		width: 440px !important;
+		width: 540px !important;
 		display: grid !important;
-		grid-template-columns: 1fr 1fr !important;
+		grid-template-columns: 1fr 1fr 1fr !important;
 		gap: 2px 8px !important;
 		padding: 10px 12px !important;
 		background: rgba(12, 12, 12, 0.98) !important;
@@ -392,6 +392,21 @@ header.scroll-down #mainmenu > li > a {
 		box-shadow: 0 12px 36px rgba(0, 0, 0, 0.6) !important;
 		border-radius: 8px !important;
 		left: -40px !important;
+		max-height: 70vh !important;
+		overflow-y: auto !important;
+	}
+
+	#mainmenu li ul.innermenue::-webkit-scrollbar {
+		width: 4px !important;
+	}
+
+	#mainmenu li ul.innermenue::-webkit-scrollbar-track {
+		background: transparent !important;
+	}
+
+	#mainmenu li ul.innermenue::-webkit-scrollbar-thumb {
+		background: rgba(255, 255, 255, 0.2) !important;
+		border-radius: 4px !important;
 	}
 
 	#mainmenu li ul.innermenue li {
@@ -556,13 +571,25 @@ body,
 		opacity: 1 !important;
 		width: 100% !important;
 		height: auto !important;
-		max-height: none !important;
+		max-height: 50vh !important;
+		overflow-y: auto !important;
 		background: rgba(255, 255, 255, 0.04) !important;
 		padding: 10px 10px !important;
 		border-radius: 8px !important;
 		margin: 6px 0 10px 0 !important;
 		border: 1px solid rgba(255, 255, 255, 0.1) !important;
 		box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.4) !important;
+	}
+
+	header.menu-open #mainmenu li ul::-webkit-scrollbar,
+	header.menu-open #mainmenu li ul.innermenue::-webkit-scrollbar {
+		width: 3px !important;
+	}
+
+	header.menu-open #mainmenu li ul::-webkit-scrollbar-thumb,
+	header.menu-open #mainmenu li ul.innermenue::-webkit-scrollbar-thumb {
+		background: rgba(255, 255, 255, 0.15) !important;
+		border-radius: 3px !important;
 	}
 
 	header.menu-open #mainmenu li ul li,
